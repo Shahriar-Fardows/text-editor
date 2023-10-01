@@ -22,6 +22,7 @@ document.getElementById("coupon").addEventListener("click", function () {
     open.classList.remove('hidden');
     document.getElementById('h-btn').addEventListener('click', function(){
         const couponGet = document.getElementById('input').value;
+        couponGet.value = '';
         if (couponGet == 'give30'){
             const price = document.getElementById('price');
             const priceget = price.innerText;
