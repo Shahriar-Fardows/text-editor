@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today practice projects</title>
+    <title>Text Editor</title>
     <!-- tailwindcss AND   daisy ui link  -->
    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/51d09f34cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+  <main>
+    <section class="bg-blue-300	 rounded  p-5 	 m-36 text-center">
+        <h1 class="text-4xl  py-5">My Text Editor</h1>
+       <div class="bg-sky-300  p-3	 mx-28 border-2 border-zinc-950">
+            <div class="flex justify-between 		 my-[8px] ">
+                <!-- icon div  -->
+                <div >
+                    <i style='font-size:24px' class='fas hover:bg-green-300	'>&#xf032;</i>
+                    <i style='font-size:24px' class='fas mx-4 hover:bg-green-300		'>&#xf033;</i>
+                    <i style='font-size:24px' class='fas hover:bg-green-300	'>&#xf0cd;</i>
+                </div>
+                <div>
+                    <i style='font-size:24px' class='fas hover:bg-green-300	'>&#xf037;</i>
+                    <i style='font-size:24px' class='fas hover:bg-green-300	 mx-4'>&#xf039;</i>
+                    <i style='font-size:24px' class='fas hover:bg-green-300	'>&#xf036;</i>
+                    <i style='font-size:24px' class='fas hover:bg-green-300	 mx-4'>&#xf038;</i>
+                </div>
+                <div class="flex items-center">
+                    <input type="number" value="14" class="input hover:bg-green-300	   bg-sky-300  w-[70px] h-6		 " />
+                    <i style='font-size:24px' class='fas  text-2xl'>&#xf031;</i>
 
-
-
-
-
-    
+                    <input type="color" name="color" id="color" class="bg-sky-300 hover:bg-green-300 text-2xl	 mx-4 text-white">
+                </div>
+                
+            </div><hr>
+            <textarea class="textarea w-full	h-[25vh]	  mt-3" name="text" id="text" ></textarea>
+       </div>
+    </section>
+  </main>
 </body>
 </html>
